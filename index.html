@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-column-preview-card-component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            width: 1440px;
+            background-image: url(favicon-32x32.png);
+        }
+
+        .container {
+            background-color: hsl(0, 0%, 95%);
+            display: flex;
+            margin: 0 9vw;
+            width: 82vw;
+            height: 93vh;
+        }
+
+        .bigbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        img {
+            width: 50px;
+            height: 30px;
+            padding: 38px 0 0 0;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-family: 'Big Shoulders Display', cursive;
+            color: hsl(0, 0%, 95%);
+        }
+
+        .box1 {
+            display: inline-flex;
+            flex-direction: column;
+            background-color: hsl(31, 77%, 52%);
+            padding: auto 5vh;
+            width: 12.6vw;
+            height: 59vh;
+            padding: 0 35px;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        .box2 {
+            display: inline-flex;
+            flex-direction: column;
+            background-color: hsl(184, 100%, 22%);
+            width: 12.6vw;
+            padding: 0 35px;
+            height: 59vh;
+        }
+
+        .box3 {
+            display: inline-flex;
+            flex-direction: column;
+            background-color: hsl(179, 100%, 13%);
+            padding: 0 35px;
+            width: 12.6vw;
+            height: 59vh;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        .btn1 {
+            width: 8vw;
+            height: 5vh;
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 15px;
+            color: hsl(31, 77%, 52%);
+            cursor: pointer;
+            margin: 50px 0 0 0;
+        }
+
+        .btn2 {
+            width: 8vw;
+            height: 5vh;
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 15px;
+            color: hsl(184, 100%, 22%);
+            cursor: pointer;
+            margin: 50px 0 0 0;
+        }
+
+        .btn3 {
+            width: 8vw;
+            height: 5vh;
+            border: 1px solid white;
+            background-color: hsl(0, 0%, 95%);
+            border-radius: 15px;
+            color: hsl(179, 100%, 13%);
+            cursor: pointer;
+            margin: 50px 0 0 0;
+        }
+
+        p {
+            font-size: 12.5px;
+            color: hsla(0, 0%, 100%, 0.75);
+            line-height: 21px;
+            letter-spacing: -0.5px;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                overflow: hidden;
+                align-items: center;
+                height: 1080px;
+                width: 70vw;
+                padding: 20px 15px;
+            }
+
+            .bigbox {
+                flex-direction: column;
+            }
+
+            .box1 {
+                width: 50vw;
+                height: 45vh;
+                padding: 0 32px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .box2 {
+                width: 50vw;
+                height: 45vh;
+                padding: 0 32px;
+            }
+
+            .box3 {
+                width: 50vw;
+                height: 45vh;
+                padding: 0 32px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+
+            .btn1,
+            .btn2,
+            .btn3 {
+                width: 115px;
+                height: 35px;
+                margin-top: 10px;
+            }
+
+            h1 {
+                margin-top: 11px;
+                margin-bottom: 6px;
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bigbox">
+            <div class="box1">
+                <img src="icon-sedans.svg" alt="">
+                <h1>SEDANS</h1>
+                <p>Choose a sedan for its affordability and excellent fuel economy. Idealfor cruising in the city or an your next road trip.</p>
+                <button class="btn1">Learn More</button>
+            </div>
+            <div class="box2">
+                <img src="icon-suvs.svg" alt="">
+                <h1>SUVS</h1>
+                <p>Take a SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+                <button class="btn2">Learn More</button>
+            </div>
+            <div class="box3">
+                <img src="icon-luxury.svg" alt="">
+                <h1>LUXURY</h1>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rentaland arrive in style.</p>
+                <button class="btn3">Learn More</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
